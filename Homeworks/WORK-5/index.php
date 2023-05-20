@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 10</title>
+    <title>Student Registration Form</title>
 </head>
 <body>
-    <form method= "POST" action="check.php">
-        <label>Full Name: </label><br>
-        <input type="text" name="name" placeholder="Full Name" required><br>
-        <br>
-        <label>E-Mail Address: </label><br>
-        <input type="email" name="email" placeholder="E-Mail" required><br>
-        <br>
-        <label>Gender: </label><br>
-        <input type="radio" name="gender" value="Male">Male <br>
-        <input type="radio" name="gender" value="Female">Female <br>
-        <br>
-        <input type="submit" name="submit" value="Submit">
+    <h1>Student Registration Form</h1>
+    <form method="POST" action="register.php">
+        <label for="full_name">Full Name:</label>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label><br><br>
+
+        <input type="submit" value="Submit">
     </form>
 </body>
+</html>
 </html>
